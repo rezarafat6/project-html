@@ -1,0 +1,343 @@
+* , *::before , *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root{
+    --primary-color: #fd4c82;
+  
+}
+
+body{
+  font-family: sans-serif;
+  background-color: #f8f9fa;
+}
+ul , li {
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color:inherit;
+}
+.text-gray{
+  color: #999;
+}
+.bg-white{
+  background-color: white;
+}
+.d-flex{
+  display: flex;
+}
+.justify-center{
+  justify-content: center;
+}
+.justify-between{
+  justify-content: space-between;
+}
+.align-center{
+  align-items: center;
+}
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+header{
+  background:linear-gradient(rgba(128, 128, 128, 0.3), rgba(128, 128, 128, 0.1)) , url("../images/bg_1.jpg") no-repeat center center / cover;
+  margin-bottom: 250px;
+}
+.social-media{
+  
+  padding: 10px 0;
+
+}
+.social-media > div:first-child{
+  font-size: 13px;
+}
+.social-media i{
+  background-color: white;
+  padding: 5px;
+  border-radius: 50%;
+  font-size: 20px;
+  transition: 0.4s;
+}
+.social-media i:hover{
+  color:white;
+  background-color: var(--primary-color);
+}
+.logo i{
+  font-size: 30px;
+  color: var(--primary-color)
+}
+.logo{
+  gap: 8px;
+  
+}
+.logo h3{
+  flex-direction: column;
+}
+.logo h3 > span{
+  font-size: 13px;
+  margin-top: -5px;
+  color: var(--primary-color)
+}
+nav{
+  padding: 10px;
+  
+}
+nav ul{
+  gap: 70px;
+  
+}
+
+ul li:first-child > a{
+  color:var(--primary-color);
+
+}
+
+ul li:first-child > a:hover{
+  color:black;
+
+}
+.font-w{
+  font-weight: bold;
+}
+
+ul li:last-child > a , .slogan a{
+  background-color: var(--primary-color);
+  color: white;
+  display: inline-block;
+  padding: 20px;
+  
+}
+ul li:last-child > a:hover {
+  
+  color: black;
+  
+}
+.slogan{
+  width: 45%;
+  padding: 70px 0 40px 0;
+}
+.slogan h1{
+  font-size: 60px;
+  margin-bottom: 25px;
+}
+.slogan p {
+  line-height: 25px;
+  margin-bottom: 20px;
+}
+.slogan a{
+  border-radius: 5px;
+}
+.slogan a:last-child , button{
+  background-color: #91C235;
+  border: 1px solid #91C235;
+}
+.slogan a:last-child:hover , button:hover{
+  background-color: transparent;
+  color: #91C235;
+  border: 1px solid #91C235;
+}
+.service{
+  gap: 25px;
+  
+}
+.services-child{
+  gap: 15px;
+  padding: 20px;
+  border-radius: 5px;
+  transition: 0.5s;
+  transform: translate(0 , 50%);
+}
+.services-child:hover{
+  background-color: var(--primary-color);
+  color:white;
+}
+
+.services-child:hover p{
+  color:white !important;
+}
+.services-child:hover i{
+  background-color:white;
+}
+.services-child i {
+  background-color: #F0F0F0 ;
+  padding: 10px;
+  font-size: 35px;
+  border-radius: 50%;
+  color: var(--primary-color);
+  
+}
+.services-child h3{
+  margin-bottom: 15px;
+}
+
+.about-left{
+  width: 50% !important;
+  background: url("../images/about.jpg") ;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  align-self: stretch !important;
+}
+
+.pd-100{
+  padding-left: 100px;
+}
+.about-right{
+  width: 50%;
+  padding-top: 20px;
+  flex-direction: column;
+}
+.about-right p:first-child{
+  color: var(--primary-color);
+  display: block;
+  margin-bottom: 5px;
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.about-right h2 {
+  width: 95%;
+  font-size: 45px;
+  margin-bottom: 10px;
+}
+.p-middle{
+  margin-bottom: 25px ;
+  line-height: 4vh;
+  
+}
+.about-right div {
+  gap: 50px;
+}
+.about-right i {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 15px;
+  border-radius: 20%;
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+.fw-700{
+  font-weight: 700;
+  font-size: 20px;
+  transform: translate(0 , -50%);
+}
+.appointment{
+  background-color: white;
+  margin-bottom: 50px;
+}
+.appointment h3 {
+  color: var(--primary-color);
+  text-transform: uppercase;
+  padding-top: 50px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: flex-start;
+  transition: 1s;
+  
+}
+.mg-b{
+  margin-bottom: 70px;
+}
+
+input , select , textarea {
+  width: 20%;
+  padding: 10px;
+  border: 1px solid #999;
+  border-radius: 5px;
+  color: #999;
+  font-size: 17px;
+  resize: none;
+  height: 50px;
+  flex-grow: 1;
+  
+}
+button {
+  width: 20%;
+  flex-grow: 1;
+  height: 50px;
+  border-radius: 5px;
+  color: white;
+  
+}
+.groomers-title{
+  text-align: center;
+  color: var(--primary-color);
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.2vw;
+  text-transform: uppercase;
+  padding: 10px 0;
+}
+.our-Groomers{
+  text-align: center;
+  font-size: 30px;
+  font-weight: 900;
+  margin-bottom: 150px;
+}
+.groomers-child {
+  
+  background-color: white;
+  width: 25%;
+  transition: 0.4s;
+  position: relative;
+  padding: 160px 0 80px 0;
+  text-align: center;
+}
+.groomers-child img {
+    width: 80%;
+    border-radius: 50%;
+    transform: translate(-50% , -50%);
+    display: block;
+    margin: 0 auto;
+    border: 10px solid #f8f9fa;
+    transition: 0.4s;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    
+}
+.groomers-child:hover {
+  background-color: #91C235;
+  color: white;
+}
+.groomers-child:hover img {
+  border: 10px solid white;
+}
+.person {
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+.job {
+  margin-bottom: 15px;
+  color: var(--primary-color);
+  font-size: 14px;
+  font-weight: 900;
+
+}
+.groomers-child i {
+  background-color: var(--primary-color);
+  padding: 10px;
+  margin: 0 5px;
+  border-radius: 5px;
+  color: white;
+  font-size: 20px;
+}
+.groomers-child:hover p {
+  color: white;
+}
+.groomers-child:hover i {
+  color: #91C235;
+  background-color: white;
+}
+.gap-40{
+  gap: 40px;
+}
